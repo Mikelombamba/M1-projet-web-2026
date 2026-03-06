@@ -2,6 +2,8 @@ import { Link } from '@tanstack/react-router'
 import { Route as indexRoute } from './routes/index'
 import { Route as aboutRoute } from './routes/about'
 import { Route as booksRoute } from './routes/books'
+import { Route as clientsRoute } from './routes/clients' // Importe ta nouvelle route
+import { UserOutlined } from '@ant-design/icons' // On importe une icône sympa pour les clients
 import { Space, type MenuProps } from 'antd'
 import { BookOutlined, HomeOutlined, InfoOutlined } from '@ant-design/icons'
 import Menu from 'antd/es/menu/menu'
@@ -21,6 +23,11 @@ export function Layout({ children }: LayoutProps) {
       label: <Link to={booksRoute.to}>Books</Link>,
       key: 'books',
       icon: <BookOutlined />,
+    },
+    {
+      label: <Link to={clientsRoute.to}>Clients</Link>,
+      key: 'clients',
+      icon: <UserOutlined />, // Utilise l'icône User
     },
     {
       label: <Link to={aboutRoute.to}>About</Link>,
