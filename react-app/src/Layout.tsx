@@ -75,16 +75,16 @@ export function Layout({ children }: LayoutProps) {
     <Space
       direction="vertical"
       style={{
-        width: '100%',
+        width: '90%',
         height: '100vh',
       }}
     >
       {/* Header avec menu */}
       <div
         style={{
-          textAlign: 'left',
+          textAlign: 'center',
           width: '100%',
-          backgroundColor: '#395E66',
+          backgroundColor: '#0e162e',
           color: 'white',
         }}
       >
@@ -92,13 +92,16 @@ export function Layout({ children }: LayoutProps) {
         <Menu
           mode="horizontal"
           theme="dark"
-          style={{ backgroundColor: '#395E66' }}
+          style={{ backgroundColor: '#0e132e' }}
           selectedKeys={[
-            path.startsWith('/books')
-              ? 'books'
-              : path.startsWith('/about')
-                ? 'about'
-                : 'home',
+            path.startsWith('/books') ? 'books'
+            : path.startsWith('/about') ? 'about'
+                : path.startsWith('/clients') ? 'clients'
+                    : path.startsWith('/authors') ? 'authors'
+                        : path.startsWith('/sales') ? 'sales'
+                            : 'home',
+                            
+
           ]}
           items={items}
         />

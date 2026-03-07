@@ -48,7 +48,7 @@ export const SaleList = () => {
 
   return (
     <Space direction="vertical" style={{ width: '95%', textAlign: 'left' }}>
-      <Typography.Title level={1}>Sales</Typography.Title>
+      <Typography.Title level={1}></Typography.Title>
 
       <Button
         type="primary"

@@ -13,7 +13,7 @@ function App() {
 
   return (
     <>
-      <Hello name={name}>How are you ?</Hello>
+      <Hello name={name}>Which book are you looking for  ?</Hello>
       <input value={newName} onChange={e => setNewName(e.target.value)} />
       <button onClick={onValidate}>OK</button>
       <h3>This is a subtitle</h3>

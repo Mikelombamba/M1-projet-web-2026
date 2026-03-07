@@ -19,7 +19,7 @@ export function ClientList() {
           <ClientListItem
             key={client.id}
             client={client}
-            onDelete={deleteClient}
+            onDelete={deleteClient}  
             onUpdate={updateClient}
           />
         ))}

@@ -38,6 +38,7 @@ export const useClientProvider = () => {
       .then(() => loadClients())
       .catch(err => console.error(err))
   }
+  
 
   return { clients, loadClients, createClient, updateClient, deleteClient }
 }

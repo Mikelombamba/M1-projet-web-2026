@@ -34,7 +34,7 @@ export function ClientListItem({
     onUpdate(client.id, { name, firstName })
     setIsEditing(false)
   }
-
+  
   const confirmDelete = () => {
     Modal.confirm({
       title: 'Delete Client',
@@ -50,12 +50,14 @@ export function ClientListItem({
       style={{
         width: '100%',
         height: '50px',
-        borderRadius: '10px',
-        backgroundColor: '#EEEEEE',
+        borderRadius: '12px',
+        backgroundColor: 'rgba(255, 255, 255, 0.08)', // plus sombre
+        border: '1px solid rgba(255,255,255,0.15)',
         margin: '1rem 0',
-        padding: '.25rem',
+        padding: '.3rem',
         display: 'flex',
         justifyContent: 'space-between',
+        alignItems: 'center',
       }}
     >
       <Col span={8} style={{ margin: 'auto 0' }}>
