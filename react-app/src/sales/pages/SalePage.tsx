@@ -1,10 +1,10 @@
 import { Outlet } from '@tanstack/react-router'
-import { BookList } from '../components/BookList'
+import { SaleList } from '../components/SaleList.tsx'
 
-export function BooksPage() {
+export function SalePage() {
   return (
     <div>
-      <BookList />
+      <SaleList />
       <Outlet />
     </div>
   )

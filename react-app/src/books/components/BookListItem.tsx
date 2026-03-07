@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import type { BookModel, UpdateBookModel } from '../BookModel'
-import { Button, Col, Row } from 'antd'
+import { Button, Col, Popconfirm, Row } from 'antd'
 import {
   CheckOutlined,
   CloseOutlined,
@@ -86,9 +86,12 @@ export function BookListItem({ book, onDelete, onUpdate }: BookListItemProps) {
             <EditOutlined />
           </Button>
         )}
-        <Button type="primary" danger onClick={() => onDelete(book.id)}>
-          <DeleteOutlined />
-        </Button>
+        <Popconfirm
+          title="Delete this sale?"
+          onConfirm={() => onDelete(book.id)}
+        >
+          <Button danger icon={<DeleteOutlined />} />
+        </Popconfirm>
       </Col>
     </Row>
   )
