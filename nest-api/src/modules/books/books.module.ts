@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
-import { BookController } from './book.controller';
-import { BookService } from './book.service';
+import { BookController } from './books.controller';
+import { BookService } from './books.service';
 import { BookRepository } from './book.repository';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { BookEntity } from './entities/book.entity';

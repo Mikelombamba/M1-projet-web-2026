@@ -10,6 +10,7 @@ import {
 } from './book.model';
 import { BookEntity, BookId } from './entities/book.entity';
 
+
 @Injectable()
 export class BookRepository {
   constructor(
