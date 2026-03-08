@@ -1,4 +1,4 @@
-# m1-s1-2026 project
+# m1-s2-2026 project
 
 
 📚 Bibliothèque M1 - Gestion des Clients :
